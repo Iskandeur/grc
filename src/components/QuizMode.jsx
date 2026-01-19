@@ -34,7 +34,7 @@ export default function QuizMode({ questions, onRestart }) {
         const percentage = Math.round((score / questions.length) * 100);
         return (
             <div className="flex flex-col items-center justify-center max-w-lg mx-auto w-full text-center p-8 bg-surface/50 backdrop-blur-md rounded-2xl border border-white/10">
-                <h2 className="text-3xl font-bold mb-4">Quiz Complete!</h2>
+                <h2 className="text-3xl font-bold mb-4">Quiz Terminé !</h2>
                 <div className="relative w-32 h-32 flex items-center justify-center mb-6">
                     <svg className="transform -rotate-90 w-full h-full">
                         <circle cx="64" cy="64" r="60" stroke="currentColor" strokeWidth="8" fill="transparent" className="text-surface" />
@@ -50,7 +50,7 @@ export default function QuizMode({ questions, onRestart }) {
                 </div>
 
                 <p className="text-muted mb-8 text-lg">
-                    You got <span className="text-text font-bold">{score}</span> out of <span className="text-text font-bold">{questions.length}</span> correct.
+                    Vous avez <span className="text-text font-bold">{score}</span> bonnes réponses sur <span className="text-text font-bold">{questions.length}</span>.
                 </p>
 
                 <button
@@ -58,7 +58,7 @@ export default function QuizMode({ questions, onRestart }) {
                     className="flex items-center gap-2 px-6 py-3 bg-primary text-background font-bold rounded-lg hover:brightness-110 transition-all active:scale-95"
                 >
                     <RotateCcw className="w-5 h-5" />
-                    Try Again
+                    Réessayer
                 </button>
             </div>
         );
@@ -135,7 +135,7 @@ export default function QuizMode({ questions, onRestart }) {
                     disabled={!isAnswered}
                     className="flex items-center gap-2 px-6 py-3 bg-secondary text-white font-bold rounded-lg disabled:opacity-50 disabled:cursor-not-allowed hover:bg-secondary/80 transition-all active:scale-95"
                 >
-                    {currentIndex === questions.length - 1 ? 'Finish' : 'Next'}
+                    {currentIndex === questions.length - 1 ? 'Terminer' : 'Suivant'}
                     <ArrowRight className="w-5 h-5" />
                 </button>
             </div>

@@ -50,8 +50,8 @@ export default function FlashcardDeck({ cards }) {
     return (
         <div className="flex flex-col items-center max-w-2xl mx-auto w-full">
             <div className="w-full flex justify-between text-sm text-muted font-mono mb-4 px-2">
-                <span>Card {currentIndex + 1} / {cards.length}</span>
-                <span>Tap to flip</span>
+                <span>Carte {currentIndex + 1} / {cards.length}</span>
+                <span>Appuyer pour retourner</span>
             </div>
 
             <div className="relative w-full aspect-[3/2] perspective-1000">
@@ -74,7 +74,7 @@ export default function FlashcardDeck({ cards }) {
                             transition={{ duration: 0.6, ease: "backOut" }}
                             style={{ backfaceVisibility: 'hidden' }}
                         >
-                            <div className="text-primary font-mono text-sm uppercase tracking-widest mb-4">Term</div>
+                            <div className="text-primary font-mono text-sm uppercase tracking-widest mb-4">Terme</div>
                             <h3 className="text-3xl md:text-4xl font-bold bg-gradient-to-br from-white to-gray-400 bg-clip-text text-transparent">{currentCard.term}</h3>
                             <div className="absolute bottom-6 right-6 text-muted/20">
                                 <RotateCw className="w-6 h-6" />
@@ -88,7 +88,7 @@ export default function FlashcardDeck({ cards }) {
                             transition={{ duration: 0.6, ease: "backOut" }}
                             style={{ backfaceVisibility: 'hidden', transform: "rotateY(180deg)" }}
                         >
-                            <div className="text-secondary font-mono text-sm uppercase tracking-widest mb-4">Definition</div>
+                            <div className="text-secondary font-mono text-sm uppercase tracking-widest mb-4">Définition</div>
                             <p className="text-xl md:text-2xl leading-relaxed text-gray-200">{currentCard.definition}</p>
                         </motion.div>
                     </motion.div>

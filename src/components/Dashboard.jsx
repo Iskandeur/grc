@@ -10,10 +10,10 @@ export default function Dashboard() {
         <div className="space-y-8">
             <div className="text-center space-y-4">
                 <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight bg-gradient-to-r from-primary via-accent to-secondary bg-clip-text text-transparent pb-1">
-                    Module Select
+                    Sélection du Module
                 </h1>
                 <p className="text-muted text-lg max-w-2xl mx-auto">
-                    Select a module to start reviewing Governance, Risk, and Compliance concepts.
+                    Choisissez un module pour commencer à réviser la Gouvernance, le Risque et la Conformité.
                 </p>
             </div>
 

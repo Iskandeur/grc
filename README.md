@@ -1,16 +1,53 @@
-# React + Vite
+# GRC_Nex - Révision Gouvernance, Risque et Conformité
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Une application web gamifiée pour réviser les concepts clés de la GRC, du DevSecOps et de la sécurité offensive/défensive. Conçue pour être esthétique, fluide et moderne.
 
-Currently, two official plugins are available:
+![GRC App](https://img.shields.io/badge/Status-Deployed-success?style=for-the-badge&color=10b981)
+![Tech](https://img.shields.io/badge/Tech-React%20%7C%20Vite%20%7C%20Tailwind-blue?style=for-the-badge)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🔗 **Accéder à l'application :** [grc.alexandre-pinoteau.fr](https://grc.alexandre-pinoteau.fr/)
 
-## React Compiler
+## 🎯 Fonctionnalités
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+L'application transforme des fiches de cours classiques en une expérience interactive :
 
-## Expanding the ESLint configuration
+*   **⚡ Mode Flashcards** : Révisez les définitions et acronymes avec des cartes interactives (animations 3D).
+*   **🧠 Mode Quiz** : Testez vos connaissances avec des QCM et un suivi de score.
+*   **💎 Design Premium** : Interface sombre "Cyber" avec effets néons et transitions fluides (Framer Motion).
+*   **📱 Responsive** : Fonctionne parfaitement sur mobile et desktop.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📚 Contenu du Cours
+
+Le contenu est divisé en 3 modules principaux :
+
+1.  **Fondamentaux & Actifs** : CIA (Confidentialité, Intégrité, Disponibilité), Actifs critiques, Vulnérabilités (CVSS, EPSS).
+2.  **DevSecOps & Cloud** : Intégration de la sécurité (Shift-Left, IaaC), Scans (SAST, DAST, IAST), Posture Cloud (CSPM, CASB).
+3.  **Défenses Avancées** : Surface d'attaque (ASM/EASM), Sécurité Email (SPF/DKIM/DMARC), Réponse aux incidents (SOAR, UEBA).
+
+## 🛠️ Installation Locale
+
+Si vous souhaitez modifier le code ou lancer le projet sur votre machine :
+
+```bash
+# 1. Cloner le dépôt
+git clone git@github.com:Iskandeur/grc.git
+cd grc
+
+# 2. Installer les dépendances
+npm install
+
+# 3. Lancer le serveur de développement
+npm run dev
+```
+
+L'application sera accessible sur `http://localhost:5173`.
+
+## 🚀 Déploiement
+
+Le déploiement est automatisé via **GitHub Actions**.
+À chaque `push` sur la branche `main`, le site est construit et publié sur **GitHub Pages**.
+
+Le fichier `public/CNAME` assure la liaison avec le sous-domaine `grc.alexandre-pinoteau.fr`.
+
+---
+*Fait avec ❤️ pour rendre la GRC un peu moins "chiante".*

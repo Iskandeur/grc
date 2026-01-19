@@ -14,8 +14,8 @@ export default function ModuleView() {
     if (!moduleData) {
         return (
             <div className="text-center py-20">
-                <h2 className="text-2xl font-bold text-danger">Module Not Found</h2>
-                <Link to="/" className="text-primary hover:underline mt-4 block">Return Home</Link>
+                <h2 className="text-2xl font-bold text-danger">Module Introuvable</h2>
+                <Link to="/" className="text-primary hover:underline mt-4 block">Retour à l'accueil</Link>
             </div>
         );
     }
@@ -24,7 +24,7 @@ export default function ModuleView() {
         <div className="max-w-4xl mx-auto space-y-8">
             <Link to="/" className="inline-flex items-center gap-2 text-muted hover:text-primary transition-colors">
                 <ArrowLeft className="w-4 h-4" />
-                Back to Dashboard
+                Retour au tableau de bord
             </Link>
 
             <div className="text-center space-y-4">
@@ -38,8 +38,8 @@ export default function ModuleView() {
                 <button
                     onClick={() => setMode('flashcards')}
                     className={`flex items-center gap-2 px-6 py-3 rounded-lg border transition-all ${mode === 'flashcards'
-                            ? 'bg-primary/20 border-primary text-primary'
-                            : 'bg-surface border-white/10 hover:bg-surface/80'
+                        ? 'bg-primary/20 border-primary text-primary'
+                        : 'bg-surface border-white/10 hover:bg-surface/80'
                         }`}
                 >
                     <BookOpen className="w-5 h-5" />
@@ -48,12 +48,12 @@ export default function ModuleView() {
                 <button
                     onClick={() => setMode('quiz')}
                     className={`flex items-center gap-2 px-6 py-3 rounded-lg border transition-all ${mode === 'quiz'
-                            ? 'bg-secondary/20 border-secondary text-secondary'
-                            : 'bg-surface border-white/10 hover:bg-surface/80'
+                        ? 'bg-secondary/20 border-secondary text-secondary'
+                        : 'bg-surface border-white/10 hover:bg-surface/80'
                         }`}
                 >
                     <HelpCircle className="w-5 h-5" />
-                    Quiz Mode
+                    Mode Quiz
                 </button>
             </div>
 

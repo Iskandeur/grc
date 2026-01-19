@@ -42,14 +42,14 @@ export const courseContent = [
         title: "Part 2: DevSecOps & Cloud Sec",
         description: "L'intégration de la sécurité dans le DevOps, les types de scans (DAST/SAST/IAST) et la posture Cloud (CSPM).",
         flashcards: [
-            { term: "DevOps", definition: "Mentalité visant à unir le développement et les opérations. 'Automatisons l'impossible', 'Partageons'." },
-            { term: "Shift-Left", definition: "Tester et intégrer la sécurité le plus tôt possible dans le cycle de développement." },
-            { term: "IaaC", definition: "Infrastructure as Code : Provisionner et gérer l'infrastructure via du code." },
-            { term: "DAST", definition: "Dynamic Application Security Testing : Test 'boîte noire' en temps réel sur l'application en cours d'exécution." },
-            { term: "SAST", definition: "Static Application Security Testing : Analyse du code source pour trouver des failles (sans exécuter)." },
-            { term: "IAST", definition: "Interactive AST : Observe l'appli en fonctionnement (via agent) pour trouver des failles. Plus rapide que SAST." },
-            { term: "CSPM", definition: "Cloud Security Posture Management : Surveille la config cloud et alerte sur les mauvaises configurations." },
-            { term: "CASB", definition: "Cloud Access Security Broker : Intermédiaire pour gérer la sécurité entre les utilisateurs et les services Cloud (Shadow IT, DLP)." }
+            { term: "DevOps", definition: "Approche culturelle unifiant le développement (Dev) et les opérations (Ops). Principes : 'Automatisons l'impossible', 'Partageons', 'Shift-Left'." },
+            { term: "Shift-Left", definition: "Intégrer la sécurité le plus tôt possible dans le cycle de développement (dès le design/code) plutôt qu'à la fin." },
+            { term: "IaaC", definition: "Infrastructure as Code. Gérer et provisionner l'infrastructure informatique via des fichiers de définition lisibles par machine (ex: Terraform)." },
+            { term: "DAST", definition: "Dynamic Application Security Testing. Test de sécurité 'boîte noire' effectué sur l'application en cours d'exécution (ex: scanner web)." },
+            { term: "SAST", definition: "Static Application Security Testing. Analyse du code source 'boîte blanche' pour détecter des vulnérabilités sans exécuter le programme." },
+            { term: "IAST", definition: "Interactive Application Security Testing. Combine SAST et DAST en analysant l'application de l'intérieur pendant son exécution (via un agent)." },
+            { term: "CSPM", definition: "Cloud Security Posture Management. Outils automatisés pour surveiller et corriger les mauvaises configurations dans le cloud (AWS, Azure...)." },
+            { term: "CASB", definition: "Cloud Access Security Broker. Point de contrôle entre les utilisateurs et les services cloud pour appliquer les politiques de sécurité (DLP, Shadow IT)." }
         ],
         quiz: [
             {
@@ -79,14 +79,14 @@ export const courseContent = [
         title: "Part 3: ASM, Email & SOAR",
         description: "Gestion de la surface d'attaque, sécurité des emails et automatisation de la réponse (SOAR/UEBA).",
         flashcards: [
-            { term: "ASM", definition: "Attack Surface Management : Processus d'identification et gestion de la surface d'attaque (vue attaquant)." },
-            { term: "EASM", definition: "External Attack Surface Management : Focus sur les points d'entrée via Internet." },
-            { term: "SPF", definition: "Sender Policy Framework : Vérifie que l'IP de l'expéditeur est autorisée pour le domaine." },
-            { term: "DKIM", definition: "DomainKeys Identified Mail : Signature crypto pour assurer que le mail n'a pas été altéré." },
-            { term: "DMARC", definition: "Utilise SPF + DKIM pour authentifier et définir la politique de rejet/quarantaine." },
-            { term: "UEBA", definition: "User and Entity Behavior Analytics : Détection d'anomalies comportementales via IA/ML." },
-            { term: "SOAR", definition: "Security Orchestration, Automation and Response : Automatise la réponse aux incidents et l'orchestration des outils." },
-            { term: "S/MIME", definition: "Chiffrement de bout en bout du contenu des emails." }
+            { term: "ASM", definition: "Attack Surface Management. Processus continu de découverte et de surveillance des actifs exposés d'une organisation (vue attaquant)." },
+            { term: "EASM", definition: "External Attack Surface Management. Sous-catégorie de l'ASM focalisée sur les actifs exposés sur Internet." },
+            { term: "SPF", definition: "Sender Policy Framework. Système anti-usurpation vérifiant que l'IP de l'expéditeur est autorisée à envoyer des emails pour ce domaine." },
+            { term: "DKIM", definition: "DomainKeys Identified Mail. Ajoute une signature cryptographique aux emails pour garantir qu'ils n'ont pas été modifiés en transit." },
+            { term: "DMARC", definition: "Domain-based Message Authentication, Reporting, and Conformance. Utilise SPF et DKIM pour donner des instructions au destinataire (ex: rejeter le mail si échec)." },
+            { term: "UEBA", definition: "User and Entity Behavior Analytics. Analyse comportementale (basée sur l'IA/ML) pour détecter des anomalies par rapport à une base de référence." },
+            { term: "SOAR", definition: "Security Orchestration, Automation and Response. Plateforme pour orchestrer les outils de sécurité et automatiser la réponse aux incidents." },
+            { term: "S/MIME", definition: "Secure/Multipurpose Internet Mail Extensions. Standard pour le chiffrement de bout en bout et la signature numérique des courriels." }
         ],
         quiz: [
             {
